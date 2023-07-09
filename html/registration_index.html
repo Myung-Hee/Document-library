@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu" >
+<head>
+  <meta charset="UTF-8">
+  <title>Regisztráció</title>
+<link rel="stylesheet" href="../css/login_style.css">
+
+</head>
+<body>
+   
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Regisztráció</h2>
+    <form action="" id="formvalidate" name="myform" onsubmit="return validalas();">
+        <div class="input-group">
+            <input class="form-control" name="email" id="emailAddress" type="email" placeholder="E-mail" />
+
+          </div>
+      <div class="input-group">
+        <input class="form-control" name="userName" id="userName" type="text" placeholder="Felhasználónév" />
+        
+      </div>
+      <div class="input-group">
+        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="Jelszó" />
+        
+      </div>
+
+      <button type="submit" id="login">Regisztráció</button>
+    </form>
+  </div>
+  <div class="signup-wrapper text-center">
+    <a href="../html/login_index.html"><span class="registrationbutton">Bejelentkezés</span></a>
+  </div>
+</div>  
+<p class="requirements">* A felhasználónév és jelszó csak betűket és számokat tartalmazhat.</p>
+<p class="requirements">* Az e-mail cím a '@' és '.' karaktereken kívül más speciális karaktereket nem tartalmazhat.</p>
+
+
+<script  src="../js/registration_script.js"></script>
+<!--<script src="../js/dark_mode.js"></script>-->
+
+</body>
+</html>

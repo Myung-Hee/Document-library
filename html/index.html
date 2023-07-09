@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+      
+      <link rel="stylesheet" type="text/css" href="../css/dokumentumtar.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <title>Dokumentumtár</title>
+      <style>
+        .kijelolt{
+                  background-color: rgba(123, 184, 238, 0.733);
+                  cursor: pointer;
+                }
+      </style>
+  </head>
+  <body>
+
+    <div id="fejlec">
+      <h4><i>Dokumentumtár</i></h4>
+      <span id="udv"></span>
+
+      <span id="kijelentkezes"></span>
+    </div>
+
+    
+    <div id="menu">
+      <nav>
+        <ul>
+          <li id="ujmappa"><a  href="#">Új mappa létrehozása</a></li>
+          <li id="torles"><a  href="#">Mappa/fájl törlése</a></li>
+          <li id="megosztas"><a  href="#">Mappa/fájl megosztása</a></li>
+          <li><a href="registration_index.html">Regisztráció</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--<div id="mappak">
+      <div id="container">-->
+      <!--<div id="divContainer">
+           
+      <br><p id="mappanév" style="color: black; font-size: 15px;"></p>
+         
+     </div>
+    
+     <script>
+      $(function(){
+        
+      })
+    </script>-->
+    <div id="folder-container"></div>
+    <div id="drop-zone">
+      <button id="upload-button">+</button>
+      <p>Húzza ide a feltölteni kívánt fájlokat</p>
+    </div>
+    
+    <div id="popup-window">
+      <h2>Megosztás</h2>
+      <form>
+        <input type="text" id="megosztas-url" placeholder="../html/index.html/...">
+        <label for="share-email">Email:</label>
+        <input type="email" id="share-email" name="share-email" required placeholder="example@email.com">
+        <button type="submit">Send</button>
+        <div id="media">
+        <button id="facebook"><i class="fa fa-facebook"></i></button>
+        <button id="instagram"><i class="fa fa-instagram"></i></button>
+        <button id="twitter"><i class="fa fa-twitter"></i></button>
+        </div>
+
+      </form>
+    </div>
+
+  </body>
+  <script src="../js/dokumentumtar.js"> </script>
+  
+</html>

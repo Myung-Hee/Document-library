@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu" >
+<head>
+  <meta charset="utf-8">
+  <title>Bejelentkezés</title>
+  <link rel="stylesheet" href="../css/login_style.css">
+
+</head>
+<body>
+ 
+ 
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Bejelentkezés</h2>
+    <form action="" id="formvalidate" name="myform" onsubmit="return validalas();">
+      <div class="input-group">
+        <input class="form-control" name="userName" id="userName" type="text" placeholder="Felhasználónév" />
+        
+      </div>
+      <div class="input-group">
+        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="Jelszó" />
+        
+      </div>
+
+      <button type="submit" id="login">Bejelentkezés</button>
+    </form>
+  </div>
+  <div class="signup-wrapper text-center">
+    <a href="../html/registration_index.html"><span class="registrationbutton">Regisztráció</span></a>
+  </div>
+</div>  
+
+  <p class="requirements">* A felhasználónév és jelszó csak betűket és számokat tartalmazhat.</p>
+  <p class="requirements">* Hibás kitöltésnél nem léphetsz tovább.</p>
+
+<script  src="../js/login_script.js"></script>
+
+
+<!--<script src="../html/dokumentumtar.html"></script>-->
+
+</body>
+</html>
